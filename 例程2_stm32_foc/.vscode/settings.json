@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "user_main.h": "c",
+        "vofa.h": "c",
+        "main.h": "c",
+        "usart.h": "c"
+    }
+}

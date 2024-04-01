@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"vofa_test\startup_stm32f103xb.o"
+"vofa_test\vofa.o"
+"vofa_test\main.o"
+"vofa_test\gpio.o"
+"vofa_test\dma.o"
+"vofa_test\usart.o"
+"vofa_test\stm32f1xx_it.o"
+"vofa_test\stm32f1xx_hal_msp.o"
+"vofa_test\stm32f1xx_hal_gpio_ex.o"
+"vofa_test\stm32f1xx_hal_tim.o"
+"vofa_test\stm32f1xx_hal_tim_ex.o"
+"vofa_test\stm32f1xx_hal_uart.o"
+"vofa_test\stm32f1xx_hal.o"
+"vofa_test\stm32f1xx_hal_rcc.o"
+"vofa_test\stm32f1xx_hal_rcc_ex.o"
+"vofa_test\stm32f1xx_hal_gpio.o"
+"vofa_test\stm32f1xx_hal_dma.o"
+"vofa_test\stm32f1xx_hal_cortex.o"
+"vofa_test\stm32f1xx_hal_pwr.o"
+"vofa_test\stm32f1xx_hal_flash.o"
+"vofa_test\stm32f1xx_hal_flash_ex.o"
+"vofa_test\stm32f1xx_hal_exti.o"
+"vofa_test\system_stm32f1xx.o"
+--strict --scatter "vofa_test\vofa_test.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "vofa_test.map" -o vofa_test\vofa_test.axf
